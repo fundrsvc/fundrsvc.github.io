@@ -13,8 +13,8 @@ html, body {
   padding: 0;
 }
 body.splash {
-  background-color: #202020;
-  background-image: linear-gradient(180deg, #151515 0%, #202020 100%);
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
   background-size: cover;
 }
 footer {
@@ -38,14 +38,14 @@ footer {
   padding-top: 1.5em;
   margin-bottom: 2.5em;
   width: 100%;
-  color: #dddddd;
+  color: #121226;
   border-top: 0;
 }
 .splash-footer a {
-  color: #eeeeee;
+  color: #121226;
 }
 .splash-footer a:hover{
-  color: #ffffff;
+  color: #121226;
 }
 .img-absloute {
   position: absolute;
