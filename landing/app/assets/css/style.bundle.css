@@ -23,7 +23,7 @@
   --bs-gray-900: #313639;
   --bs-white: #ffffff;
   --bs-light: #FAF9F6;
-  --bs-primary: #ff1f2e;
+  --bs-primary: #FF1F30;
   --bs-secondary: #e4e6ef;
   --bs-success: #50cd89;
   --bs-info: #7239ea;
@@ -208,7 +208,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #ff1f2e;
+  color: #FF1F30;
   text-decoration: none;
 }
 a:hover {
@@ -2329,8 +2329,8 @@ textarea.form-control-lg {
   box-shadow: none;
 }
 .form-check-input:checked {
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
 }
 .form-check-input:checked[type="checkbox"] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 11' width='13' height='11' fill='none'%3e%3cpath d='M11.0426 1.02893C11.3258 0.695792 11.8254 0.655283 12.1585 0.938451C12.4917 1.22162 12.5322 1.72124 12.249 2.05437L5.51985 9.97104C5.23224 10.3094 4.72261 10.3451 4.3907 10.05L0.828197 6.88335C0.50141 6.59288 0.471975 6.09249 0.762452 5.7657C1.05293 5.43891 1.55332 5.40948 1.88011 5.69995L4.83765 8.32889L11.0426 1.02893Z' fill='%23FFFFFF'/%3e%3c/svg%3e");
@@ -2339,8 +2339,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23FFFFFF'/%3e%3c/svg%3e");
 }
 .form-check-input[type="checkbox"]:indeterminate {
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2413,7 +2413,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -2441,7 +2441,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -2923,8 +2923,8 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   color: #000;
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .btn-primary:hover {
@@ -2958,8 +2958,8 @@ fieldset:disabled .btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #000;
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
 }
 .btn-secondary {
   color: #000;
@@ -3270,13 +3270,13 @@ fieldset:disabled .btn {
   background-color: transparent;
 }
 .btn-outline-primary {
-  color: #ff1f2e;
-  border-color: #ff1f2e;
+  color: #FF1F30;
+  border-color: #FF1F30;
 }
 .btn-outline-primary:hover {
   color: #000;
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
 }
 .btn-check:focus + .btn-outline-primary,
 .btn-outline-primary:focus {
@@ -3288,8 +3288,8 @@ fieldset:disabled .btn {
 .btn-outline-primary.dropdown-toggle.show,
 .btn-outline-primary:active {
   color: #000;
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
 }
 .btn-check:active + .btn-outline-primary:focus,
 .btn-check:checked + .btn-outline-primary:focus,
@@ -3300,7 +3300,7 @@ fieldset:disabled .btn {
 }
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #ff1f2e;
+  color: #FF1F30;
   background-color: transparent;
 }
 .btn-outline-secondary {
@@ -3509,7 +3509,7 @@ fieldset:disabled .btn {
 }
 .btn-link {
   font-weight: 400;
-  color: #ff1f2e;
+  color: #FF1F30;
   text-decoration: none;
 }
 .btn-link:hover {
@@ -3808,7 +3808,7 @@ fieldset:disabled .btn {
 .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .dropdown-item.disabled,
 .dropdown-item:disabled {
@@ -3848,7 +3848,7 @@ fieldset:disabled .btn {
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .dropdown-menu-dark .dropdown-item.disabled,
 .dropdown-menu-dark .dropdown-item:disabled {
@@ -3972,7 +3972,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #ff1f2e;
+  color: #FF1F30;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4029,7 +4029,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .nav-fill .nav-item,
 .nav-fill > .nav-link {
@@ -4697,7 +4697,7 @@ fieldset:disabled .btn {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #ff1f2e;
+  color: #FF1F30;
   background-color: #FAF9F6;
   box-shadow: inset 0 -1px 0 #eff2f5;
 }
@@ -4797,7 +4797,7 @@ fieldset:disabled .btn {
   content: var(--bs-breadcrumb-divider, "/");
 }
 .breadcrumb-item.active {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .pagination {
   display: flex;
@@ -4819,14 +4819,14 @@ fieldset:disabled .btn {
 }
 .page-link:hover {
   z-index: 2;
-  color: #ff1f2e;
+  color: #FF1F30;
   text-decoration: none;
   background-color: #fff0f1;
   border-color: transparent;
 }
 .page-link:focus {
   z-index: 3;
-  color: #ff1f2e;
+  color: #FF1F30;
   background-color: #fff0f1;
   outline: 0;
   box-shadow: none;
@@ -4837,7 +4837,7 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   border-color: transparent;
 }
 .page-item.disabled .page-link {
@@ -5017,7 +5017,7 @@ fieldset:disabled .btn {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5093,8 +5093,8 @@ fieldset:disabled .btn {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #ff1f2e;
-  border-color: #ff1f2e;
+  background-color: #FF1F30;
+  border-color: #FF1F30;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -6222,7 +6222,7 @@ fieldset:disabled .btn {
   color: #f7f9fb;
 }
 .link-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .link-primary:focus,
 .link-primary:hover {
@@ -6627,7 +6627,7 @@ fieldset:disabled .btn {
   border-color: #FAF9F6 !important;
 }
 .border-primary {
-  border-color: #ff1f2e !important;
+  border-color: #FF1F30 !important;
 }
 .border-secondary {
   border-color: #e4e6ef !important;
@@ -24640,11 +24640,11 @@ fieldset:disabled .btn {
 }
 .bg-hover-primary:hover {
   --bg-color: 0, 163, 255;
-  background-color: #ff1f2e !important;
+  background-color: #FF1F30 !important;
 }
 .bg-active-primary.active {
   --bg-color: 0, 163, 255;
-  background-color: #ff1f2e !important;
+  background-color: #FF1F30 !important;
 }
 .bg-state-primary {
   cursor: pointer;
@@ -24652,7 +24652,7 @@ fieldset:disabled .btn {
 .bg-state-primary.active,
 .bg-state-primary:hover {
   --bg-color: 0, 163, 255;
-  background-color: #ff1f2e !important;
+  background-color: #FF1F30 !important;
 }
 .bg-secondary {
   --bg-color: 228, 230, 239;
@@ -25253,10 +25253,10 @@ fieldset:disabled .btn {
   border-color: #FAF9F6 !important;
 }
 .border-hover-primary:hover {
-  border-color: #ff1f2e !important;
+  border-color: #FF1F30 !important;
 }
 .border-active-primary.active {
-  border-color: #ff1f2e !important;
+  border-color: #FF1F30 !important;
 }
 .border-hover-secondary:hover {
   border-color: #e4e6ef !important;
@@ -25603,7 +25603,7 @@ fieldset:disabled .btn {
   transition: fill 0.3s ease;
 }
 .text-primary {
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
 }
 .text-inverse-primary {
   color: #fff !important;
@@ -25619,15 +25619,15 @@ fieldset:disabled .btn {
 }
 .text-hover-primary:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
 }
 .text-hover-primary:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
 }
 .text-hover-primary:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .text-hover-primary:hover .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -25661,15 +25661,15 @@ fieldset:disabled .btn {
 }
 .text-active-primary.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
 }
 .text-active-primary.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
 }
 .text-active-primary.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .text-active-primary.active .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -26968,7 +26968,7 @@ a:hover {
 .nav-line-tabs .nav-item.show .nav-link {
   background-color: transparent;
   border: 0;
-  border-bottom: 1px solid #ff1f2e;
+  border-bottom: 1px solid #FF1F30;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .nav-line-tabs.nav-line-tabs-2x {
@@ -27107,11 +27107,11 @@ a:hover {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%235E6278'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e");
 }
 .page-item:focus:not(.disabled) .page-link i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .page-item:focus:not(.disabled) .page-link .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .page-item:focus:not(.disabled) .page-link .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -27129,11 +27129,11 @@ a:hover {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%2300A3FF'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e");
 }
 .page-item:hover:not(.disabled) .page-link i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .page-item:hover:not(.disabled) .page-link .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .page-item:hover:not(.disabled) .page-link .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -28331,23 +28331,23 @@ a:hover {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e");
 }
 .menu-primary .menu-item .menu-link {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-primary .menu-item .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-primary .menu-item .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-primary .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-primary .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .menu-primary .menu-item .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-primary .menu-item .menu-link .menu-arrow:after {
   background-repeat: no-repeat;
@@ -28360,23 +28360,23 @@ a:hover {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' fill='%2300A3FF'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.93537 4.57889C6.03839 4.77912 6.0191 5.0363 5.87137 5.21403L2.87153 8.82282C2.68598 9.04603 2.36951 9.06026 2.16468 8.8546C1.95985 8.64893 1.94422 8.30126 2.12977 8.07804L4.80594 4.85863L2.15586 1.93583C1.96104 1.72096 1.96165 1.37314 2.15722 1.15895C2.35279 0.944757 2.66927 0.945311 2.86409 1.16018L5.85194 4.45551C5.8859 4.49296 5.91371 4.53459 5.93537 4.57889Z'/%3e%3c/svg%3e");
 }
 .menu-title-primary .menu-item .menu-link {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-title-primary .menu-item .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-icon-primary .menu-item .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-icon-primary .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-icon-primary .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .menu-bullet-primary .menu-item .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-arrow-primary .menu-item .menu-link .menu-arrow:after {
   background-repeat: no-repeat;
@@ -29405,20 +29405,20 @@ a:hover {
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon i,
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29426,7 +29426,7 @@ a:hover {
 }
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-hover-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-arrow:after,
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-arrow:after {
@@ -29442,20 +29442,20 @@ a:hover {
 .menu-show-primary .menu-item.here > .menu-link,
 .menu-show-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-primary .menu-item.here > .menu-link .menu-title,
 .menu-show-primary .menu-item.show > .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-primary .menu-item.here > .menu-link .menu-icon i,
 .menu-show-primary .menu-item.show > .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-show-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-show-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-show-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29463,7 +29463,7 @@ a:hover {
 }
 .menu-show-primary .menu-item.here > .menu-link .menu-bullet .bullet,
 .menu-show-primary .menu-item.show > .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-show-primary .menu-item.here > .menu-link .menu-arrow:after,
 .menu-show-primary .menu-item.show > .menu-link .menu-arrow:after {
@@ -29478,23 +29478,23 @@ a:hover {
 }
 .menu-active-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-primary .menu-item .menu-link.active .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-primary .menu-item .menu-link.active .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-primary .menu-item .menu-link.active .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-active-primary .menu-item .menu-link.active .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .menu-active-primary .menu-item .menu-link.active .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-active-primary .menu-item .menu-link.active .menu-arrow:after {
   background-repeat: no-repeat;
@@ -29509,20 +29509,20 @@ a:hover {
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon i,
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29530,7 +29530,7 @@ a:hover {
 }
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-arrow:after,
 .menu-state-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-arrow:after {
@@ -29546,20 +29546,20 @@ a:hover {
 .menu-state-primary .menu-item.here > .menu-link,
 .menu-state-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item.here > .menu-link .menu-title,
 .menu-state-primary .menu-item.show > .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item.here > .menu-link .menu-icon i,
 .menu-state-primary .menu-item.show > .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-state-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-state-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29567,7 +29567,7 @@ a:hover {
 }
 .menu-state-primary .menu-item.here > .menu-link .menu-bullet .bullet,
 .menu-state-primary .menu-item.show > .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-primary .menu-item.here > .menu-link .menu-arrow:after,
 .menu-state-primary .menu-item.show > .menu-link .menu-arrow:after {
@@ -29582,23 +29582,23 @@ a:hover {
 }
 .menu-state-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link.active .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link.active .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link.active .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link.active .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .menu-state-primary .menu-item .menu-link.active .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-primary .menu-item .menu-link.active .menu-arrow:after {
   background-repeat: no-repeat;
@@ -29613,7 +29613,7 @@ a:hover {
 .menu-hover-bg-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-hover-bg-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   color: #fff;
 }
 .menu-hover-bg-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
@@ -29651,7 +29651,7 @@ a:hover {
 .menu-show-bg-primary .menu-item.here > .menu-link,
 .menu-show-bg-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   color: #fff;
 }
 .menu-show-bg-primary .menu-item.here > .menu-link .menu-title,
@@ -29688,7 +29688,7 @@ a:hover {
 }
 .menu-active-bg-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   color: #fff;
 }
 .menu-active-bg-primary .menu-item .menu-link.active .menu-title {
@@ -29720,7 +29720,7 @@ a:hover {
 .menu-state-bg-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-state-bg-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   color: #fff;
 }
 .menu-state-bg-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
@@ -29758,7 +29758,7 @@ a:hover {
 .menu-state-bg-primary .menu-item.here > .menu-link,
 .menu-state-bg-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   color: #fff;
 }
 .menu-state-bg-primary .menu-item.here > .menu-link .menu-title,
@@ -29795,7 +29795,7 @@ a:hover {
 }
 .menu-state-bg-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   color: #fff;
 }
 .menu-state-bg-primary .menu-item .menu-link.active .menu-title {
@@ -29828,20 +29828,20 @@ a:hover {
 .menu-show-bg-light-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
   background-color: #fff0f1;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-bg-light-primary .menu-item.here > .menu-link .menu-title,
 .menu-show-bg-light-primary .menu-item.show > .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-bg-light-primary .menu-item.here > .menu-link .menu-icon i,
 .menu-show-bg-light-primary .menu-item.show > .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-bg-light-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-show-bg-light-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-show-bg-light-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-show-bg-light-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29849,7 +29849,7 @@ a:hover {
 }
 .menu-show-bg-light-primary .menu-item.here > .menu-link .menu-bullet .bullet,
 .menu-show-bg-light-primary .menu-item.show > .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-show-bg-light-primary .menu-item.here > .menu-link .menu-arrow:after,
 .menu-show-bg-light-primary .menu-item.show > .menu-link .menu-arrow:after {
@@ -29866,20 +29866,20 @@ a:hover {
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
   background-color: #fff0f1;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon i,
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-hover-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29887,7 +29887,7 @@ a:hover {
 }
 .menu-hover-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-hover-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-arrow:after,
 .menu-hover-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-arrow:after {
@@ -29903,23 +29903,23 @@ a:hover {
 .menu-active-bg-light-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
   background-color: #fff0f1;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-bg-light-primary .menu-item .menu-link.active .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-bg-light-primary .menu-item .menu-link.active .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-bg-light-primary .menu-item .menu-link.active .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-active-bg-light-primary .menu-item .menu-link.active .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .menu-active-bg-light-primary .menu-item .menu-link.active .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-active-bg-light-primary .menu-item .menu-link.active .menu-arrow:after {
   background-repeat: no-repeat;
@@ -29935,20 +29935,20 @@ a:hover {
 .menu-state-bg-light-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
   background-color: #fff0f1;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item.here > .menu-link .menu-title,
 .menu-state-bg-light-primary .menu-item.show > .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item.here > .menu-link .menu-icon i,
 .menu-state-bg-light-primary .menu-item.show > .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-state-bg-light-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-state-bg-light-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29956,7 +29956,7 @@ a:hover {
 }
 .menu-state-bg-light-primary .menu-item.here > .menu-link .menu-bullet .bullet,
 .menu-state-bg-light-primary .menu-item.show > .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item.here > .menu-link .menu-arrow:after,
 .menu-state-bg-light-primary .menu-item.show > .menu-link .menu-arrow:after {
@@ -29973,20 +29973,20 @@ a:hover {
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
   background-color: #fff0f1;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon i,
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -29994,7 +29994,7 @@ a:hover {
 }
 .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-arrow:after,
 .menu-state-bg-light-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-arrow:after {
@@ -30010,23 +30010,23 @@ a:hover {
 .menu-state-bg-light-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
   background-color: #fff0f1;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link.active .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link.active .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link.active .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link.active .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .menu-state-bg-light-primary .menu-item .menu-link.active .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-bg-light-primary .menu-item .menu-link.active .menu-arrow:after {
   background-repeat: no-repeat;
@@ -30041,52 +30041,52 @@ a:hover {
 .menu-hover-title-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-hover-title-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-title-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
 .menu-hover-title-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-title-primary .menu-item.here > .menu-link,
 .menu-show-title-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-title-primary .menu-item.here > .menu-link .menu-title,
 .menu-show-title-primary .menu-item.show > .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-title-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-title-primary .menu-item .menu-link.active .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-title-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-state-title-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-title-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-title,
 .menu-state-title-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-title-primary .menu-item.here > .menu-link,
 .menu-state-title-primary .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-title-primary .menu-item.here > .menu-link .menu-title,
 .menu-state-title-primary .menu-item.show > .menu-link .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-title-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-title-primary .menu-item .menu-link.active .menu-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-hover-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
@@ -30094,12 +30094,12 @@ a:hover {
 }
 .menu-hover-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon i,
 .menu-hover-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-hover-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-hover-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-hover-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-hover-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -30111,12 +30111,12 @@ a:hover {
 }
 .menu-show-icon-primary .menu-item.here > .menu-link .menu-icon i,
 .menu-show-icon-primary .menu-item.show > .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-show-icon-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-show-icon-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-show-icon-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-show-icon-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -30126,11 +30126,11 @@ a:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .menu-active-icon-primary .menu-item .menu-link.active .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-active-icon-primary .menu-item .menu-link.active .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-active-icon-primary .menu-item .menu-link.active .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -30141,12 +30141,12 @@ a:hover {
 }
 .menu-state-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon i,
 .menu-state-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-state-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-icon-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-state-icon-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -30158,12 +30158,12 @@ a:hover {
 }
 .menu-state-icon-primary .menu-item.here > .menu-link .menu-icon i,
 .menu-state-icon-primary .menu-item.show > .menu-link .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-icon-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g),
 .menu-state-icon-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-icon-primary .menu-item.here > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .menu-state-icon-primary .menu-item.show > .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
@@ -30173,11 +30173,11 @@ a:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .menu-state-icon-primary .menu-item .menu-link.active .menu-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .menu-state-icon-primary .menu-item .menu-link.active .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .menu-state-icon-primary .menu-item .menu-link.active .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -30188,7 +30188,7 @@ a:hover {
 }
 .menu-hover-bullet-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
 .menu-hover-bullet-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-show-bullet-primary .menu-item.here > .menu-link,
 .menu-show-bullet-primary .menu-item.show > .menu-link {
@@ -30196,13 +30196,13 @@ a:hover {
 }
 .menu-show-bullet-primary .menu-item.here > .menu-link .menu-bullet .bullet,
 .menu-show-bullet-primary .menu-item.show > .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-active-bullet-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .menu-active-bullet-primary .menu-item .menu-link.active .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-bullet-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-state-bullet-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
@@ -30210,7 +30210,7 @@ a:hover {
 }
 .menu-state-bullet-primary .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
 .menu-state-bullet-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-bullet-primary .menu-item.here > .menu-link,
 .menu-state-bullet-primary .menu-item.show > .menu-link {
@@ -30218,13 +30218,13 @@ a:hover {
 }
 .menu-state-bullet-primary .menu-item.here > .menu-link .menu-bullet .bullet,
 .menu-state-bullet-primary .menu-item.show > .menu-link .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-state-bullet-primary .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .menu-state-bullet-primary .menu-item .menu-link.active .menu-bullet .bullet {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .menu-hover-arrow-primary .menu-item .menu-link:hover:not(.disabled):not(.active),
 .menu-hover-arrow-primary .menu-item.hover > .menu-link:not(.disabled):not(.active) {
@@ -30336,7 +30336,7 @@ a:hover {
   display: flex;
 }
 .anchor:hover a:hover {
-  color: #ff1f2e;
+  color: #FF1F30;
   transition: all 0.2s ease;
 }
 .card {
@@ -31078,8 +31078,8 @@ a:hover {
 }
 .btn.btn-primary {
   color: #fff;
-  border-color: #ff1f2e;
-  background-color: #ff1f2e;
+  border-color: #FF1F30;
+  background-color: #FF1F30;
 }
 .btn.btn-primary i {
   color: #fff;
@@ -31148,22 +31148,22 @@ a:hover {
   color: #fff;
 }
 .btn.btn-light-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
   border-color: #fff0f1;
   background-color: #fff0f1;
 }
 .btn.btn-light-primary i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-light-primary .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn.btn-light-primary .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn.btn-light-primary.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-light-primary,
 .btn-check:checked + .btn.btn-light-primary,
@@ -31174,8 +31174,8 @@ a:hover {
 .btn.btn-light-primary:hover:not(.btn-active),
 .show > .btn.btn-light-primary {
   color: #fff;
-  border-color: #ff1f2e;
-  background-color: #ff1f2e !important;
+  border-color: #FF1F30;
+  background-color: #FF1F30 !important;
 }
 .btn-check:active + .btn.btn-light-primary i,
 .btn-check:checked + .btn.btn-light-primary i,
@@ -31219,8 +31219,8 @@ a:hover {
   color: #fff;
 }
 .btn.btn-bg-primary {
-  border-color: #ff1f2e;
-  background-color: #ff1f2e;
+  border-color: #FF1F30;
+  background-color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-primary,
 .btn-check:checked + .btn.btn-active-primary,
@@ -31231,8 +31231,8 @@ a:hover {
 .btn.btn-active-primary:hover:not(.btn-active),
 .show > .btn.btn-active-primary {
   color: #fff;
-  border-color: #ff1f2e;
-  background-color: #ff1f2e !important;
+  border-color: #FF1F30;
+  background-color: #FF1F30 !important;
 }
 .btn-check:active + .btn.btn-active-primary i,
 .btn-check:checked + .btn.btn-active-primary i,
@@ -31283,7 +31283,7 @@ a:hover {
 .btn.btn-active-light-primary:focus:not(.btn-active),
 .btn.btn-active-light-primary:hover:not(.btn-active),
 .show > .btn.btn-active-light-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
   border-color: #fff0f1;
   background-color: #fff0f1 !important;
 }
@@ -31295,7 +31295,7 @@ a:hover {
 .btn.btn-active-light-primary:focus:not(.btn-active) i,
 .btn.btn-active-light-primary:hover:not(.btn-active) i,
 .show > .btn.btn-active-light-primary i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-light-primary .svg-icon svg [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-active-light-primary .svg-icon svg [fill]:not(.permanent):not(g),
@@ -31306,7 +31306,7 @@ a:hover {
 .btn.btn-active-light-primary:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
 .show > .btn.btn-active-light-primary .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-light-primary .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-active-light-primary .svg-icon svg:hover [fill]:not(.permanent):not(g),
@@ -31326,10 +31326,10 @@ a:hover {
 .btn.btn-active-light-primary:focus:not(.btn-active).dropdown-toggle:after,
 .btn.btn-active-light-primary:hover:not(.btn-active).dropdown-toggle:after,
 .show > .btn.btn-active-light-primary.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-active-light-primary.btn-outline:not(.btn-outline-default) {
-  border-color: #ff1f2e !important;
+  border-color: #FF1F30 !important;
 }
 .btn.btn-secondary {
   color: #3f4254;
@@ -32869,20 +32869,20 @@ a:hover {
   color: #fff;
 }
 .btn.btn-color-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-color-primary i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-color-primary .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn.btn-color-primary .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn.btn-color-primary.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-color-primary,
 .btn-check:checked + .btn.btn-active-color-primary,
@@ -32892,7 +32892,7 @@ a:hover {
 .btn.btn-active-color-primary:focus:not(.btn-active),
 .btn.btn-active-color-primary:hover:not(.btn-active),
 .show > .btn.btn-active-color-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-color-primary i,
 .btn-check:checked + .btn.btn-active-color-primary i,
@@ -32902,7 +32902,7 @@ a:hover {
 .btn.btn-active-color-primary:focus:not(.btn-active) i,
 .btn.btn-active-color-primary:hover:not(.btn-active) i,
 .show > .btn.btn-active-color-primary i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-color-primary .svg-icon svg [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-active-color-primary .svg-icon svg [fill]:not(.permanent):not(g),
@@ -32913,7 +32913,7 @@ a:hover {
 .btn.btn-active-color-primary:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
 .show > .btn.btn-active-color-primary .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-color-primary .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-active-color-primary .svg-icon svg:hover [fill]:not(.permanent):not(g),
@@ -32933,20 +32933,20 @@ a:hover {
 .btn.btn-active-color-primary:focus:not(.btn-active).dropdown-toggle:after,
 .btn.btn-active-color-primary:hover:not(.btn-active).dropdown-toggle:after,
 .show > .btn.btn-active-color-primary.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-icon-primary i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-icon-primary .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn.btn-icon-primary .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn.btn-icon-primary.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-icon-primary i,
 .btn-check:checked + .btn.btn-active-icon-primary i,
@@ -32956,7 +32956,7 @@ a:hover {
 .btn.btn-active-icon-primary:focus:not(.btn-active) i,
 .btn.btn-active-icon-primary:hover:not(.btn-active) i,
 .show > .btn.btn-active-icon-primary i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-icon-primary .svg-icon svg [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-active-icon-primary .svg-icon svg [fill]:not(.permanent):not(g),
@@ -32967,7 +32967,7 @@ a:hover {
 .btn.btn-active-icon-primary:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
 .show > .btn.btn-active-icon-primary .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-icon-primary .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-active-icon-primary .svg-icon svg:hover [fill]:not(.permanent):not(g),
@@ -32987,10 +32987,10 @@ a:hover {
 .btn.btn-active-icon-primary:focus:not(.btn-active).dropdown-toggle:after,
 .btn.btn-active-icon-primary:hover:not(.btn-active).dropdown-toggle:after,
 .show > .btn.btn-active-icon-primary.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-text-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-active-text-primary,
 .btn-check:checked + .btn.btn-active-text-primary,
@@ -33000,7 +33000,7 @@ a:hover {
 .btn.btn-active-text-primary:focus:not(.btn-active),
 .btn.btn-active-text-primary:hover:not(.btn-active),
 .show > .btn.btn-active-text-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn.btn-color-secondary {
   color: #e4e6ef;
@@ -35892,7 +35892,7 @@ a:hover {
 .btn.btn-outline.btn-outline-dashed:focus:not(.btn-active),
 .btn.btn-outline.btn-outline-dashed:hover:not(.btn-active),
 .show > .btn.btn-outline.btn-outline-dashed {
-  border-color: #ff1f2e;
+  border-color: #FF1F30;
 }
 .btn.btn-outline.btn-outline-dashed.btn-outline-default {
   border-width: 1px;
@@ -35921,8 +35921,8 @@ a:hover {
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:focus:not(.btn-active),
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:hover:not(.btn-active),
 .show > .btn.btn-outline.btn-outline-dashed.btn-outline-default {
-  color: #ff1f2e;
-  border-color: #ff1f2e;
+  color: #FF1F30;
+  border-color: #FF1F30;
   background-color: #fff0f1 !important;
 }
 .btn-check:active + .btn.btn-outline.btn-outline-dashed.btn-outline-default i,
@@ -35933,7 +35933,7 @@ a:hover {
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:focus:not(.btn-active) i,
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:hover:not(.btn-active) i,
 .show > .btn.btn-outline.btn-outline-dashed.btn-outline-default i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .btn-check:active + .btn.btn-outline.btn-outline-dashed.btn-outline-default .svg-icon svg [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-outline.btn-outline-dashed.btn-outline-default .svg-icon svg [fill]:not(.permanent):not(g),
@@ -35944,7 +35944,7 @@ a:hover {
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
 .show > .btn.btn-outline.btn-outline-dashed.btn-outline-default .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .btn-check:active + .btn.btn-outline.btn-outline-dashed.btn-outline-default .svg-icon svg:hover [fill]:not(.permanent):not(g),
 .btn-check:checked + .btn.btn-outline.btn-outline-dashed.btn-outline-default .svg-icon svg:hover [fill]:not(.permanent):not(g),
@@ -35964,7 +35964,7 @@ a:hover {
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:focus:not(.btn-active).dropdown-toggle:after,
 .btn.btn-outline.btn-outline-dashed.btn-outline-default:hover:not(.btn-active).dropdown-toggle:after,
 .show > .btn.btn-outline.btn-outline-dashed.btn-outline-default.dropdown-toggle:after {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 code:not([class*="language-"]) {
   font-weight: 400;
@@ -36130,7 +36130,7 @@ code:not([class*="language-"]) {
   background-color: #eff2f5;
 }
 .form-check.form-check-solid .form-check-input:checked {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .form-check.form-check-success .form-check-input:checked {
   background-color: #50cd89;
@@ -37860,7 +37860,7 @@ code:not([class*="language-"]) {
   color: #a1a5b7;
 }
 .popover .popover-dismiss:hover i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .popover .popover-dismiss + .popover-header {
   padding-right: 2.75rem;
@@ -37952,11 +37952,11 @@ code:not([class*="language-"]) {
   justify-content: center;
 }
 .accordion.accordion-icon-toggle .accordion-icon i {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .accordion.accordion-icon-toggle .accordion-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .accordion.accordion-icon-toggle .accordion-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -40994,7 +40994,7 @@ code:not([class*="language-"]) {
   border-color: #FAF9F6;
 }
 .pulse.pulse-primary .pulse-ring {
-  border-color: #ff1f2e;
+  border-color: #FF1F30;
 }
 .pulse.pulse-secondary .pulse-ring {
   border-color: #e4e6ef;
@@ -41073,7 +41073,7 @@ code:not([class*="language-"]) {
   right: 20px;
   cursor: pointer;
   z-index: 100;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
   opacity: 0;
   transition: color 0.2s ease, background-color 0.2s ease;
@@ -41152,7 +41152,7 @@ code:not([class*="language-"]) {
 }
 .svg-icon.svg-icon-primary svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #ff1f2e;
+  fill: #FF1F30;
 }
 .svg-icon.svg-icon-primary svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -42145,10 +42145,10 @@ code:not([class*="language-"]) {
 }
 .badge-primary {
   color: #fff;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .badge-light-primary {
-  color: #ff1f2e;
+  color: #FF1F30;
   background-color: #fff0f1;
 }
 .badge-secondary {
@@ -42627,7 +42627,7 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
 }
 .stepper.stepper-pills .stepper-item .stepper-icon .stepper-number {
   font-weight: 600;
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
   font-size: 1.25rem;
 }
 .stepper.stepper-pills .stepper-item .stepper-label {
@@ -42649,10 +42649,10 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
 }
 .stepper.stepper-pills .stepper-item.current .stepper-icon {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-icon .stepper-check {
-  color: #ff1f2e;
+  color: #FF1F30;
   display: none;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-icon .stepper-number {
@@ -42672,7 +42672,7 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
 }
 .stepper.stepper-pills .stepper-item.completed .stepper-icon .stepper-check,
 .stepper.stepper-pills .stepper-item.current:last-child .stepper-icon .stepper-check {
-  color: #ff1f2e !important;
+  color: #FF1F30 !important;
   display: inline-block;
 }
 .stepper.stepper-pills .stepper-item.completed .stepper-icon .stepper-number,
@@ -42844,7 +42844,7 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
   padding: 5px 10px;
   position: absolute;
   z-index: 1;
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
   box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
   top: 50%;
@@ -43129,10 +43129,10 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .stepper.stepper-links .stepper-nav .stepper-item.current .stepper-title {
-  color: #ff1f2e;
+  color: #FF1F30;
 }
 .stepper.stepper-links .stepper-nav .stepper-item.current:after {
-  background-color: #ff1f2e;
+  background-color: #FF1F30;
 }
 .stepper.stepper-links .stepper-nav .stepper-item.completed .stepper-title {
   color: #b5b5c3;
@@ -43161,8 +43161,8 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
   border-left-color: #5e6278;
 }
 .stepper-pills.stepper-dark .stepper-nav .stepper-item.current .stepper-icon {
-  background-color: #ff1f2e;
-  border: 1px dashed #ff1f2e;
+  background-color: #FF1F30;
+  border: 1px dashed #FF1F30;
 }
 .stepper-pills.stepper-dark .stepper-nav .stepper-item.current .stepper-label .stepper-title {
   color: #fff;
@@ -43198,7 +43198,7 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .item-border-hover:hover .label {
-  background-color: #ff1f2e !important;
+  background-color: #FF1F30 !important;
   transition: color 0.2s ease, background-color 0.2s ease;
   color: #fff;
 }
