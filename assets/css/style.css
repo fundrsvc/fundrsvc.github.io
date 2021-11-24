@@ -528,6 +528,7 @@ iframe {
 .navbar-fixed-top {
 	position: absolute!important;
 	border-bottom: none;
+	background-color: #FAF9F6;
 	transition: background-color 0.25s ease 0s;
 }
 
