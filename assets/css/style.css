@@ -1181,18 +1181,22 @@ ul.pricing-list li.price-value{
 	margin-top:20px;
 	margin-bottom: 10px;
 	font-weight: 600;
-	color: #071e55;
+
 }
 
 ul.pricing-list li.price-subtitle{
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 600;
 	color: #6a6a6a;
 }
-
+ul.pricing-list li.price-subtitle-note{
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
 ul.pricing-list li.price-text{
 	display: block;
 	font-family: 'Open Sans', sans-serif;
