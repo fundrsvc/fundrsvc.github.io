@@ -1,693 +1,790 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Rippler, Inc.">
-  <meta name="keywords" content="fundrsvc, fundrs, investors relations, investors pipeline, investor update, metrics tracking">
-  <meta name="description" content="Update your investors, Track your metrics, Manage your fundraising pipeline with ease">
-
-  <title>FundrsVC | One Platform for All Your Investor Relationships</title>
-
-  <!-- Loading Bootstrap -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Loading Template CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-  <link href="assets/css/animate.css" rel="stylesheet">
-  <link href="assets/css/style-magnific-popup.css" rel="stylesheet">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FundrsVC Corp.">
+  <meta name="keywords"
+    content="fundrsvc, fundrs, investors relations, investors pipeline, investor update, metrics tracking">
+  <meta name="description"
+    content="Update your investors, Track your metrics, Manage your fundraising pipeline with ease">
+  <title>Startup Fundraising Platform | FundrsVC</title>
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
-  <link rel="manifest" href="assets/ico/site.webmanifest">
-  <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#FF1F30">
-  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/ico/favicon-16x16.png">
+  <link rel="manifest" href="../assets/ico/site.webmanifest">
+  <link rel="mask-icon" href="../assets/ico/safari-pinned-tab.svg" color="#FF1F30">
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
   <meta name="msapplication-TileColor" content="#FF1F30">
-  <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
+  <meta name="msapplication-config" content="../assets/ico/browserconfig.xml">
   <meta name="theme-color" content="#FF1F30">
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css" />
+  <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css" />
 
+  <!-- Main Theme Styles + Bootstrap -->
+  <link rel="stylesheet" media="screen" href="../assets/css/public.css">
+  <link rel="stylesheet" media="screen" href="../assets/css/custom.css">
+
+
+  <!-- Page loading styles -->
+  <style>
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .dark-mode .page-loading {
+      background-color: #0b0f19;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner>span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #9397ad;
+    }
+
+    .dark-mode .page-loading-inner>span {
+      color: #fff;
+      opacity: .6;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      border: .15em solid #b4b7c9;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+
+    .dark-mode .page-spinner {
+      border-color: rgba(255, 255, 255, .4);
+      border-right-color: transparent;
+    }
+
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <!-- Theme mode -->
+  <script>
+    let mode = window.localStorage.getItem('mode'),
+      root = document.getElementsByTagName('html')[0];
+    if (mode !== null && mode === 'dark') {
+      root.classList.add('dark-mode');
+    } else {
+      root.classList.remove('dark-mode');
+    }
+  </script>
+
+  <!-- Page loading scripts -->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector('.page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXNQHWZ0KF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-NXNQHWZ0KF');
   </script>
-
 </head>
+
 <body>
-  <!-- begin header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-fixed-top">
-      <div class="container">
-        <!-- begin logo -->
-        <a class="navbar-brand" href="#home">
-          <img src="assets/img/logos/logo-default.svg" alt="FundrsVC" width="140" />
+
+  <!-- Page loading spinner -->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div><span>Loading...</span>
+    </div>
+  </div>
+
+
+  <!-- Page wrapper for sticky footer -->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="page-wrapper">
+
+
+    <!-- Navbar -->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+    <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <div class="container px-3">
+        <a href="../index.html" class="navbar-brand pe-3">
+          <img src="../assets/img/logo.svg" width="150" alt="FundrsVC Corp." id="header-logo">
         </a>
-        <!-- end logo -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <!-- begin navbar-nav -->
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="#how-it-works">How it Works</a></li>
-            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#updates">Updates</a></li>
+        <a href=" https://form.typeform.com/to/V1MAygg4"
+          class="btn btn-primary btn-sm shadow-primary fs-sm rounded d-none d-lg-inline-flex">Get early access
+        </a>
+      </div>
+    </header>
+
+
+    <!-- Hero section with layer parallax gfx -->
+    <section class="position-relative overflow-hidden jarallax position-relative d-flex align-items-center min-vh-100 bg-light mb-5 py-lg-5 pt-5" style="background-image: url(../assets/img/home/hero/hero-bg.svg);" data-jarallax data-img-position="0% 100%" data-speed="0.5">
+      <div class="container pt-lg-3">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-xl-5 text-center text-lg-start pt-5 mt-xl-4 pb-5">
+            <h1 class="display-4 pt-5 pb-2 pb-lg-3 mt-sm-2 mt-lg-5">Investor Relations and Fundraising Simplified</h1>
+            <p class="fs-lg mb-4 mb-lg-5">Effortlessly update investors, track key metrics, reach your funding goals,
+              and manage your fundraising pipeline with ease.</p>
+            <a href=" https://form.typeform.com/to/V1MAygg4" class="btn btn-primary shadow-primary btn-lg">Get early access</a>
+            <div class="pt-5 mt-xl-5">
+              <h6 class="pt-xl-3 pb-3 pb-lg-4">Join our growing community of startups</h6>
+              <div class="d-flex justify-content-center justify-content-lg-start mx-xl-n2">
+                <img src="../assets/img/brands/startups_graboost.svg" width="135" alt="Logo">
+                <img src="../assets/img/brands/startups_ripplerinc.svg" width="135" alt="Logo">
+                <img src="../assets/img/brands/startups_alpharalph.svg" width="135" alt="Logo">
+                <img src="../assets/img/brands/startups_flicron.svg" width="135" alt="Logo">
+              </div>
+            </div>
+          </div>
+
+          <!-- Layer parallax -->
+          <div class="col-sm-6 col-sm-6 col-9 pt-5 mt-xl-4">
+            <lottie-player class="mx-auto" src="../assets/json/animation-digital-agency.json" background="transparent" speed="1" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Features (Icon + Text) -->
+    <section class="container">
+      <h2 class="h1 text-center pb-5 pb-lg-5 pt-5">Amazing tools for Early-Stage Founders</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4 text-primary">
+            <img src="../assets/img/home/features/chat.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Investor Updates</h3>
+          <p class="fs-sm">Keep your investors informed with personalized updates and progress reports.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/metrics.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Metrics Tracking</h3>
+          <p class="fs-sm">Monitor important KPIs and milestones to showcase your progress and growth.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/calendar.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Fundraising Pipeline</h3>
+          <p class="fs-sm">Manage & track all your fundraising activities in one place, from outreach to closing.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/dataroom.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Data Room</h3>
+          <p class="fs-sm">Securely store and share documents with investors & stakeholders.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/valuation.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Valuation</h3>
+          <p class="fs-sm">Get initial valuation estimates to understand your startup's worth.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/add-group.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Investors Database</h3>
+          <p class="fs-sm">Search for the right fit by filtering through investors' profiles and interests.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/analytics.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Pitch deck Sharing</h3>
+          <p class="fs-sm">Share your pitch deck with investors and get feedback, and access analytics.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
+          <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
+            <img src="../assets/img/home/features/perks.svg" width="32" alt="Icon">
+          </div>
+          <h3 class="h5 pb-1 mb-2">Startup Perks</h3>
+          <p class="fs-sm">Access exclusive discounts, perks for startups, and partner services.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Dashboard -->
+    <section class="container pt-3 pt-md-4 pt-lg-5 pb-2 mt-lg-2 mt-xl-4">
+      <div class="row align-items-center">
+        <div class="rellax col-md-7" data-rellax-percentage="0.5" data-rellax-speed="-0.6"
+          data-disable-parallax-down="lg">
+          <img src="../assets/img/home/dashwait.png" class="d-block mx-auto" width="746" alt="Image">
+        </div>
+        <div class="rellax col-md-5 col-xl-4 offset-xl-1 d-flex d-sm-block flex-column" data-rellax-percentage="0.5"
+          data-rellax-speed="0.8" data-disable-parallax-down="lg">
+          <h2 class="pb-3 pt-2 pt-md-0">Investment Portfolio Management</h2>
+          <ul class="list-unstyled pb-2">
+            <li class="d-flex align-items-center pb-1 mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+              Search and filter startups
+            </li>
+            <li class="d-flex align-items-center pb-1 mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+              Manage and track deals
+            </li>
+            <li class="d-flex align-items-center pb-1 mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+              Real-time portfolio tracking
+            </li>
+            <li class="d-flex align-items-center pb-1 mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+              Deal analysis and evaluation tools
+            </li>
+            <li class="d-flex align-items-center pb-1 mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+              Due diligence resources
+            </li>
           </ul>
-          <div class="col-md-3 text-end">
-            <!-- a href="https://form.typeform.com/to/V1MAygg4"><button type="button" class="btn btn-primary">JOIN WAITLIST</button></a -->
-            <a href="https://mailchi.mp/874002f976ac/waiting-list"><button type="button" class="btn btn-primary">JOIN WAITLIST</button></a>
-          </div>
+          <a href=" https://form.typeform.com/to/V1MAygg4" class="btn btn-primary shadow-primary">
+            Get early access
+            <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- end header -->
-
-  <main>
-    <!--begin home section -->
-    <section class="home-section" id="home">
-      <!--begin container -->
-      <div class="container">
-        <!--begin row -->
-        <div class="row align-items-center">
-          <!--begin col-md-6-->
-          <div class="col-md-6">
-            <h1>Investor Relations Management Platform  <i class="bi bi-chat-left-quote green"></i></h1>
-            <p class="hero-text">Update your investors, Track your metrics, Manage your fundraising pipeline with ease</p>
-            <!--begin hero_jumbotron -->
-            <div class="hero_jumbotron">
-              <!-- a href="https://form.typeform.com/to/V1MAygg4"><button type="button" class="btn btn-primary btn-lg">Join the Wailist</button></a -->
-              <a href="https://mailchi.mp/874002f976ac/waiting-list"><button type="button" class="btn btn-primary btn-lg">Join the Wailist</button></a>
-              <a href="#how-it-works"><button type="button" class="btn btn-link btn-lg">Learn more</button></a>
-              <p class="newsletter-form-terms">
-                <span><i class="bi bi-check2"></i>  Get an early access to our beta platform with lifetime discounts</span>
-              </p>
-            </div>
-            <!--end hero_jumbotron -->
-          </div>
-          <!--end col-md-6-->
-          <!--begin col-md-5-->
-          <div class="col-md-6">
-            <img src="assets/img/illustrations/digital-marketing.png" class="hero-image width-100 margin-top-20" alt="Investor Updates Visualized">
-          </div>
-          <!--end col-md-5-->
-        </div>
-        <!--end row -->
-        <!--begin row -->
-        <div class="row margin-top-80">
-          <!--begin col-md-4 -->
-          <div class="col-md-4">
-            <div class="main-services">
-              <i class="bi bi-megaphone red"></i>
-              <h4>Update Investors</h4>
-              <p>Engage investors with data-driven and well-structured updates.</p>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4 -->
-          <div class="col-md-4">
-            <div class="main-services">
-              <i class="bi bi-cash-coin green"></i>
-              <h4>Raise Funds</h4>
-              <p>Accelerate your fundraising efforts with ready-to-use CRM.</p>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4 -->
-          <div class="col-md-4">
-            <div class="main-services">
-              <i class="bi bi-speedometer2 red"></i>
-              <h4>Track Metrics</h4>
-              <p>Visualize key metric with real-time intuitive dashboards.</p>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-        </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
     </section>
-    <!--end home section -->
 
-    <!--begin section-white -->
-    <section class="section-white large-padding-top">
-      <!--begin container -->
-      <div class="container">
-        <!--begin row -->
-        <div class="row">
-          <!--begin col-md-12 -->
-          <div class="col-md-12 text-center padding-bottom-20">
-            <h3>Seamless Integrations with 10s of Trusted Services</h3>
+
+    <!-- Use cases (Tabs) -->
+    <section class="container pt-5 pb-2 mt-3 mt-sm-4 mt-xl-5">
+      <h2 class="h1 text-center pb-3 pb-lg-4">One Platform — Endless Possibilities</h2>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-nowrap active" id="investor-updates-tab" data-bs-toggle="tab"
+            data-bs-target="#investor-updates" type="button" role="tab" aria-controls="investor-updates"
+            aria-selected="true">
+            <i class="bx bx-star fs-lg opacity-60 me-2"></i>
+            Investor Updates
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-nowrap" id="fundraising-pipeline-tab" data-bs-toggle="tab"
+            data-bs-target="#fundraising-pipeline" type="button" role="tab" aria-controls="fundraising-pipeline"
+            aria-selected="false">
+            <i class="bx bx-briefcase-alt-2 fs-lg opacity-60 me-2"></i>
+            Fundraising Pipeline
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-nowrap" id="customized-dashboards-tab" data-bs-toggle="tab"
+            data-bs-target="#customized-dashboards" type="button" role="tab" aria-controls="customized-dashboards"
+            aria-selected="false">
+            <i class="bx bx-rocket fs-lg opacity-60 me-2"></i>
+            Customized Dashboards
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-nowrap" id="virtual-dataroom-tab" data-bs-toggle="tab"
+            data-bs-target="#virtual-dataroom" type="button" role="tab" aria-controls="virtual-dataroom"
+            aria-selected="false">
+            <i class="bx bx-bar-chart-alt-2 fs-lg opacity-60 me-2"></i>
+            Virtual Dataroom
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content bg-secondary rounded-3 py-4">
+
+        <!-- Investor Updates -->
+        <div class="tab-pane fade show active" id="investor-updates" role="tabpanel"
+          aria-labelledby="investor-updates-tab">
+          <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+            <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+              <h3 class="mb-lg-4">Investor Updates</h3>
+              <p>Easily and efficiently keep your investors informed about the progress of your startup. By streamlining
+                this process, you can save time and focus on growing your business, while investors can stay informed
+                and up-to-date on their investment performance.</p>
+            </div>
+            <div class="col-lg-6 col-md-7 mt-md-4">
+              <img src="../assets/img/home/use-cases/05.png" class="d-block my-lg-2 mx-auto me-md-0" width="595"
+                alt="Image">
+            </div>
           </div>
-          <!--end col-md-12 -->
         </div>
-        <!--end row -->
-        <!--begin row -->
-        <div class="row justify-content-center">
-          <!--begin col-md-1 -->
-          <div class="col-md-1"></div>
-          <!--end col-md-1 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-stripe.png" class="width-100" alt="Stripe">
+
+        <!-- Fundraising Pipeline -->
+        <div class="tab-pane fade" id="fundraising-pipeline" role="tabpanel" aria-labelledby="fundraising-pipeline-tab">
+          <div class="row align-items-center pt-3 pb-2 pb-sm-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+            <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+              <h3 class="mb-lg-4">Fundraising Pipeline</h3>
+              <p>With customizable stages, startups can keep track of their progress and quickly move deals forward.
+                This feature also includes the ability to set reminders and assign tasks to team members to ensure
+                nothing falls through the cracks.</p>
+            </div>
+            <div class="col-lg-6 col-md-7 mt-md-4">
+              <img src="../assets/img/home/use-cases/06.png" class="d-block my-lg-2 mx-auto me-md-0" width="595"
+                alt="Image">
             </div>
           </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-chartmogul.png" class="width-100" alt="ChartMogul">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-quickbooks.png" class="width-100" alt="QuickBooks">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-analytics.png" class="width-100" alt="Google Analytics">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-mixpanel.png" class="width-100" alt="MixPanel">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-1 -->
-          <div class="col-md-1 d-none d-md-block"></div>
-          <!--end col-md-1 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-sheets.png" class="width-100" alt="Google Sheets">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-hubspot.png" class="width-100" alt="HubSpot">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-slack.png" class="width-100" alt="Slack">
-            </div>
-          </div>
-          <!--end col-md-2 -->
-          <!--begin col-md-2 -->
-          <div class="col-md-2 col-xs-6">
-            <div class="service-integrations">
-              <img src="assets/img/integrations/integrations-appfigures.png" class="width-100" alt="AppFigures">
-            </div>
-          </div>
-          <!--end col-md-2 -->
         </div>
-        <!--end row -->
+
+        <!-- Customized Dashboards -->
+        <div class="tab-pane fade" id="customized-dashboards" role="tabpanel"
+          aria-labelledby="customized-dashboards-tab">
+          <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 pe-sm-4 pe-md-0 ps-sm-4 ps-lg-0">
+            <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+              <h3 class="mb-lg-4">Customized Dashboards</h3>
+              <p>Easily track and monitor key performance indicators relevant to your startup. With the ability to
+                create and update personalized dashboards, you can stay on top of your business progress and make
+                informed decisions to drive growth.</p>
+            </div>
+            <div class="col-lg-6 col-md-7 mt-n3 mt-md-1">
+              <img src="../assets/img/home/use-cases/07.png" class="d-block mb-lg-2 mx-auto me-md-0" width="595"
+                alt="Image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Virtual Dataroom -->
+        <div class="tab-pane fade" id="virtual-dataroom" role="tabpanel" aria-labelledby="virtual-dataroom-tab">
+          <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 pe-sm-4 pe-md-0 ps-sm-4 ps-lg-0">
+            <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+              <h3 class="mb-lg-4">Virtual Dataroom</h3>
+              <p>Securely store and share important documents with investors during the due diligence process. This
+                feature simplifies the process of gathering and organizing important documents, saving time and effort
+                for both startups and investors.</p>
+            </div>
+            <div class="col-lg-6 col-md-7 mt-n3 mt-md-1">
+              <img src="../assets/img/home/use-cases/08.png" class="d-block mb-lg-2 mx-auto me-md-0" width="595"
+                alt="Image">
+            </div>
+          </div>
+        </div>
       </div>
-      <!--end container -->
     </section>
-    <!--end section-white -->
 
-    <!--begin how-it-works section -->
-    <section class="section-offwhite" id="how-it-works">
-      <!--begin container -->
-      <div class="container">
-        <!--begin row -->
-        <div class="row align-items-center">
-          <!--begin col-md-5 -->
-          <div class="col-md-5 col-sm-12">
-            <h2>How It Works.</h2>
-            <p>We designed fundrs platform to be the go-to hub for all your investor relationships. Getting started has never been easier.</p>
-            <!--begin row-->
-            <div class="row">
-              <!--begin col-md-4-->
-              <div class="col-md-4 col-sm-6">
-                <!--begin testim-platform-->
-                <div class="testim-platform first">
-                  <p>Usability</p>
-                  <div class="testim-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                  </div>
-                </div>
-                <!--end testim-platform-->
-              </div>
-              <!--end col-sm-4-->
-              <!--begin col-md-4-->
-              <div class="col-md-4 col-sm-6">
-                <!--begin testim-platform-->
-                <div class="testim-platform">
-                  <p>Integrations</p>
-                  <div class="testim-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                  </div>
-                </div>
-                <!--end testim-platform-->
-              </div>
-              <!--end col-sm-4-->
-            </div>
-            <!--end row-->
-          </div>
-          <!--end col-md-5 -->
-          <!--begin col-md-1 -->
-          <div class="col-md-1"></div>
-          <!--end col-md-1 -->
-          <!--begin col-md-6-->
-          <div class="col-md-6">
-            <!--begin accordion -->
-            <div class="accordion accordion-flush" id="accordionOne">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="bi bi-people-fill"></i> Create Your Account
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    It only takes a few clicks to get started with our platform. Tell us more about your startup, select your preferred plan, and get started on the spot.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="bi bi-pencil-fill"></i> Choose a Template
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    Access our extensive library of templates for all your needs from YCombinator, TechStars, 500Startups, or create your own template to wow your investors.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <i class="bi bi-bar-chart-line-fill"></i> Track Your Metrics
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    Keep an eye on your most important KPIs in a customizable, easily accessible dashboard. See who is interested in your startup and who followed your updates.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end accordion -->
-          </div>
-          <!--end col-md-6-->
+
+    <!-- Pricing -->
+    <section class="container py-5 my-md-2 my-lg-4 my-xl-5">
+      <h2 class="h1 text-center pb-3 pb-md-4">Pricing for every business, at any stage</h2>
+      <div class="price-switch-wrapper mb-n2">
+        <div class="form-check form-switch price-switch justify-content-center mt-2 mb-4" data-bs-toggle="price">
+          <input type="checkbox" class="form-check-input" id="pricing" checked>
+
+          <label class="form-check-label" for="pricing">Billed Monthly</label>
+          <label class="form-check-label d-flex align-items-start" for="pricing">Billed Annually<span
+              class="text-success small fw-semibold ms-2">(Save up to-25%)</span></label>
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end how-it-works section -->
+        <div class="table-responsive-lg">
+          <div class="d-flex align-items-center pb-4">
 
-    <!--begin section-white -->
-    <section class="section-white">
-      <!--begin container-->
-      <div class="container">
-        <!--begin row-->
-        <div class="row align-items-center">
-          <!--begin col-md-6-->
+            <!-- Pricing plan -->
+            <div class="bg-primary rounded-3 shadow-primary p-4" style="width: 36%; min-width: 18rem;">
+              <div class="card bg-transparent border-light py-3 py-sm-4 py-lg-5">
+                <div class="card-body text-light text-center">
+                  <h3 class="text-light mb-2">Start</h3>
+                  <div class="fs-lg opacity-80 pb-4 mb-3">Best for early-stage startups</div>
+                  <div class="display-5 mb-1 d-none" data-monthly-price>$49</div>
+                  <div class="display-5 mb-1" data-annual-price>$39</div>
+                  <div class="opacity-50 mb-5 d-none" data-monthly-price>Per month, billed monthly</div>
+                  <div class="opacity-50 mb-5" data-annual-price><a data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Paid once per year with a total of $468 USD">Per month, billed annually <i
+                        class="bx bx-info-circle"></i></a></div>
+                </div>
+                <div class="card-footer border-0 text-center pt-0 pb-4">
+                  <a href=" https://form.typeform.com/to/V1MAygg4" class="btn btn-light btn-lg shadow-secondary">Get early access</a>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="row flex-nowrap border rounded-3 rounded-start-0 shadow-sm g-0"
+              style="width: 64%; min-width: 32rem;">
+
+              <!-- Pricing plan -->
+              <div class="col">
+                <div class="card bg-light h-100 border-0 border-end rounded-0 py-3 py-sm-4 py-lg-5">
+                  <div class="card-body text-center">
+                    <h3 class="mb-2">Growth</h3>
+                    <div class="fs-lg pb-4 mb-3">Best for growing stratups</div>
+                    <div class="display-5 text-dark mb-1 d-none" data-monthly-price>$99</div>
+                    <div class="display-5 text-dark mb-1" data-annual-price>$79</div>
+                    <div class="text-muted mb-5 d-none" data-monthly-price>Per month, billed monthly</div>
+                    <div class="text-muted mb-5" data-annual-price>
+                      <a data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Paid once per year with a total of $948 USD">Per month, billed annually <i
+                          class="bx bx-info-circle"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-footer border-0 text-center pt-0 pb-4">
+                    <a href=" https://form.typeform.com/to/V1MAygg4" class="btn btn-outline-primary btn-lg">Get early access</a>
+                     
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pricing plan -->
+              <div class="col">
+                <div class="card bg-light h-100 border-0 rounded-start-0 py-3 py-sm-4 py-lg-5">
+                  <div class="card-body text-center">
+                    <h3 class="mb-2">Scale</h3>
+                    <div class="fs-lg pb-4 mb-3">Best for large scale startups</div>
+                    <div class="display-5 text-dark mb-1 d-none" data-monthly-price>$159</div>
+                    <div class="display-5 text-dark mb-1" data-annual-price>$129</div>
+                    <div class="text-muted mb-5 d-none" data-monthly-price>Per month, billed monthly</div>
+                    <div class="text-muted mb-5" data-annual-price>
+                      <a data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Paid once per year with a total of $1,548 USD">Per month, billed annually <i
+                          class="bx bx-info-circle"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-footer border-0 text-center pt-0 pb-4">
+                    <a href=" https://form.typeform.com/to/V1MAygg4" class="btn btn-outline-primary btn-lg">Get early access</a>
+                     
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="bg-secondary py-5">
+      <div class="container py-2 py-md-3 py-lg-4 py-xl-5">
+        <div class="row row-cols-1 row-cols-md-2 gx-3 gx-lg-4">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card border-0 bg-dark h-100 p-xl-4">
+              <div class="card-body">
+                <h2 class="display-1 text-light">Community</h2>
+                <p class="lead fw-medium text-light"><span class="opacity-70">From exclusive </span><span
+                    class="fw-bold">Networking Events</span><span class="opacity-70"> and </span><span
+                    class="fw-bold">educational webinars</span><span class="opacity-70"> to </span><span
+                    class="fw-bold">valuable resources</span><span class="opacity-70"> and </span><span
+                    class="fw-bold">personalized support</span><span class="opacity-70">, our community is a powerful
+                    resource for startups looking to raise funding and grow their businesses. </span>
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="col-md-6">
-            <h3>Discover how we can help you finding the next investor fast.</h3>
-            <p>A single platform to manage your investor relationships, raise funds, and track all of your key metrics.</p>
-            <ul class="benefits">
-                <li><i class="bi bi-check red"></i>Keep your investors in the know.</li>
-                <li><i class="bi bi-check red"></i>Accelerate your fundraising efforts.</li>
-                <li><i class="bi bi-check red"></i>Stay on top of key metrics.</li>
-            </ul>
-            <a href="https://form.typeform.com/to/V1MAygg4" class="scrool">
-              <button type="button" class="btn btn-lg btn-primary">Discover More</button>
+            <div class="card border-0 shadow-sm p-4 p-xxl-5">
+              <div class="d-flex justify-content-between pb-4 mb-2">
+                <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
+                  <i class="bx bxs-quote-left"></i>
+                </span>
+                <div class="d-flex">
+                  <button type="button" id="testimonials-prev" class="btn btn-prev btn-icon btn-sm me-2">
+                    <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <button type="button" id="testimonials-next" class="btn btn-next btn-icon btn-sm ms-2">
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Slider -->
+              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+                "spaceBetween": 24,
+                "loop": true,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "clickable": true
+                },
+                "navigation": {
+                  "prevEl": "#testimonials-prev",
+                  "nextEl": "#testimonials-next"
+                }
+              }'>
+                <div class="swiper-wrapper">
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">As a startup founder, FundrsVC has been invaluable in streamlining our
+                          investor relations and fundraising process. The seamless integrations with trusted services
+                          have saved us time and allowed us to focus on growing our business.</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
+                        <div class="ps-3">
+                          <h6 class="fw-semibold lh-base mb-0">Annette Black</h6>
+                          <span class="fs-sm text-muted">Strategic Advisor</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">FundrsVC has been a game changer for our startup. The streamlined investor
+                          updates and fundraising pipeline management have saved us time and hassle. Plus, access to a
+                          vast network of potential investors has been priceless.</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
+                        <div class="ps-3">
+                          <h6 class="fw-semibold lh-base mb-0">Ralph Edwards</h6>
+                          <span class="fs-sm text-muted">Head of Finance</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">The investor database is beneficial in finding and connecting with
+                          potential investors. I recommend FundrsVC to startups looking to simplify and streamline their
+                          investor relations and fundraising efforts.</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
+                        <div class="ps-3">
+                          <h6 class="fw-semibold lh-base mb-0">Darrell Steward</h6>
+                          <span class="fs-sm text-muted">Founder & CEO</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <!-- Pagination (bullets) -->
+                <div class="swiper-pagination position-relative mt-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Integrations -->
+    <section class="container py-5 my-md-2 my-lg-4 my-xl-5">
+      <div class="row justify-content-center pt-1 pb-1 mb-2 mb-md-3 mb-lg-4">
+        <div class="col-lg-8 col-md-9 text-center">
+          <h2 class="h1 mb-4">Seamless Integrations</h2>
+          <p class="fs-lg text-muted mb-0">Our seamless integrations allow founders to save time and focus on building
+            relationships and closing deals rather than juggling multiple tools and platforms.</p>
+        </div>
+      </div>
+      <div class="swiper mx-n2" data-swiper-options='{
+        "slidesPerView": 2,
+        "pagination": {
+          "el": ".swiper-pagination",
+          "clickable": true
+        },
+        "breakpoints": {
+          "500": {
+            "slidesPerView": 3,
+            "spaceBetween": 8
+          },
+          "650": {
+            "slidesPerView": 4,
+            "spaceBetween": 8
+          },
+          "900": {
+            "slidesPerView": 5,
+            "spaceBetween": 8
+          },
+          "1100": {
+            "slidesPerView": 6,
+            "spaceBetween": 8
+          }
+        }
+      }'>
+        <div class="swiper-wrapper">
+
+          <!-- Item -->
+          <div class="swiper-slide py-3">
+            <a class="card card-body card-hover px-2 mx-2">
+              <img src="../assets/img/integrations/integrations_ganalytics.svg" class="d-block mx-auto my-2" width="154"
+                alt="Brand">
             </a>
           </div>
-          <!--end col-md-6-->
-          <!--begin col-md-6-->
-          <div class="col-md-6">
-            <img src="assets/img/illustrations/ui-design.png" class="width-100 responsive-top-margins" alt="pic">
+
+          <!-- Item -->
+          <div class="swiper-slide py-3">
+            <a class="card card-body card-hover px-2 mx-2">
+              <img src="../assets/img/integrations/integrations_stripe.svg" class="d-block mx-auto my-2" width="154"
+                alt="Brand">
+            </a>
           </div>
-          <!--end col-sm-6-->
+
+          <!-- Item -->
+          <div class="swiper-slide py-3">
+            <a class="card card-body card-hover px-2 mx-2">
+              <img src="../assets/img/integrations/integrations_mixpanel.svg" class="d-block mx-auto my-2" width="154"
+                alt="Brand">
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3">
+            <a class="card card-body card-hover px-2 mx-2">
+              <img src="../assets/img/integrations/integrations_quickbooks.svg" class="d-block mx-auto my-2" width="154"
+                alt="Brand">
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3">
+            <a class="card card-body card-hover px-2 mx-2">
+              <img src="../assets/img/integrations/integrations_salesforce.svg" class="d-block mx-auto my-2" width="154"
+                alt="Brand">
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3">
+            <a class="card card-body card-hover px-2 mx-2">
+              <img src="../assets/img/integrations/integrations_google_sheets.svg" class="d-block mx-auto my-2"
+                width="154" alt="Brand">
+            </a>
+          </div>
         </div>
-        <!--end row-->
+
+        <!-- Pagination (bullets) -->
+        <div class="swiper-pagination position-relative pt-2 mt-4"></div>
       </div>
-      <!--end container-->
     </section>
-    <!--end section-white-->
 
-    <!--begin pricing section -->
-    <section class="section-offwhite" id="pricing">
-      <!--begin container -->
-      <div class="container">
-        <!--begin row -->
-        <div class="row">
-          <!--begin col-md-12 -->
-          <div class="col-md-12 text-center padding-bottom-40">
-            <h2>Pricing for every business, at any stage</h2>
-          </div>
-          <!--end col-md-12 -->
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="price-box">
-              <ul class="pricing-list">
-                <li class="price-title">BASIC</li>
-                <li class="price-value">$9</li>
-                <li class="price-subtitle">Monthly priced billed annually</li>
-                <li class="price-subtitle-note">Early Adapters Discount</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>2 Dashboards</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>3 Integrations</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>50 Contacts</li>
-                <li class="price-text"><i class="bi bi-circle red"></i>Custom Branding</li>
-                <li class="price-tag-line"><a href="https://mailchi.mp/874002f976ac/waiting-list">FREE 15-DAY TRIAL</a></li>
-              </ul>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="price-box">
-            <div class="ribbon red"><span>Popular</span></div>
-              <ul class="pricing-list">
-                <li class="price-title">STANDARD</li>
-                <li class="price-value">$29</li>
-                <li class="price-subtitle">Monthly priced billed annually</li>
-                <li class="price-subtitle-note">Early Adapters Discount</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>5 Dashboards</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>10 Integrations</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>500 Contacts</li>
-                <li class="price-text"><i class="bi bi-circle red"></i>Custom Branding</li>
-                <li class="price-tag"><a href="https://mailchi.mp/874002f976ac/waiting-list">FREE 15-DAY TRIAL</a></li>
-              </ul>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="price-box">
-              <ul class="pricing-list">
-                <li class="price-title white-text">PRO</li>
-                <li class="price-value white-text">$49</li>
-                <li class="price-subtitle">Monthly priced billed annually</li>
-                <li class="price-subtitle-note">Early Adapters Discount</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>Unlimited Dashboards</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>Unlimited Integrations</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>1000 Contacts</li>
-                <li class="price-text"><i class="bi bi-check-circle-fill red"></i>Custom Branding</li>
-                <li class="price-tag-line"><a href="hhttps://mailchi.mp/874002f976ac/waiting-list">FREE 15-DAY TRIAL</a></li>
-              </ul>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-        </div>
-        <!--end row -->
+
+    <!-- CTA -->
+    <section class="bg-secondary py-5">
+      <div class="container text-center py-1 py-md-4 py-lg-5">
+        <h2 class="h1 mb-4">Ready to Get Started?</h2>
+        <p class="lead pb-3 mb-3">Organize your fundraising pipeline with ease</p>
+        <a href=" https://form.typeform.com/to/V1MAygg4" class="btn btn-primary shadow-primary btn-lg mb-3">Get early access</a>
       </div>
-      <!--end container -->
     </section>
-    <!--end pricing section -->
-
-    <!--begin features section -->
-    <section class="section-white medium-padding-bottom" id="features">
-      <!--begin container -->
-      <div class="container">
-        <!--begin row -->
-        <div class="row">
-          <!--begin col-md-12-->
-          <div class="col-md-12 text-center">
-            <h2>Amazing Features</h2>
-          </div>
-          <!--end col-md-12 -->
-        </div>
-        <!--end row -->
-        <!--begin row -->
-        <div class="row">
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="feature-box light-green">
-              <i class="bi bi-gem"></i>
-              <div class="feature-box-text">
-                <h4>Easy Integrations</h4>
-                <p>Seamlessly integrate services to enjoy a connected experience.</p>
-              </div>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="feature-box light-red">
-              <i class="bi bi-speedometer2"></i>
-              <div class="feature-box-text">
-                <h4>Custom Dashboards</h4>
-                <p>Create customizable dashboards to share with your investors.</p>
-              </div>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md 4-->
-          <div class="col-md-4">
-            <div class="feature-box orange">
-              <i class="bi bi-bell"></i>
-              <div class="feature-box-text">
-                <h4>Real-time Notifications</h4>
-                <p>Keep in touch with your investors and never miss an update.</p>
-              </div>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-        </div>
-        <!--end row -->
-        <!--begin row -->
-        <div class="row">
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="feature-box dark-red">
-              <i class="bi bi-bar-chart-steps"></i>
-              <div class="feature-box-text">
-                <h4>Funding Pipeline</h4>
-                <p>Track and take control of every aspect of fundraising process.</p>
-              </div>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-          <div class="feature-box light-red">
-            <i class="bi bi-bezier"></i>
-            <div class="feature-box-text">
-              <h4>Investors Network</h4>
-              <p>Get instant access to a diverse quality investors network.</p>
-            </div>
-          </div>
-          </div>
-          <!--end col-md-4 -->
-          <!--begin col-md-4-->
-          <div class="col-md-4">
-            <div class="feature-box dark-green">
-              <i class="bi bi-chat-left-text"></i>
-              <div class="feature-box-text">
-                <h4>Update Templates</h4>
-                <p>Keep updates tidy and investors engaged with templates.</p>
-              </div>
-            </div>
-          </div>
-          <!--end col-md-4 -->
-        </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end features section -->
-
-    <!--begin blog -->
-    <section class="section-offwhite medium-padding-bottom" id="updates">
-      <!--begin container-->
-      <div class="container">
-        <!--begin row-->
-        <div class="row">
-          <!--begin col-md-12-->
-          <div class="col-md-12 text-center">
-            <h2>The Fundrs Chronicles</h2>
-          </div>
-          <!--end col-md-12-->
-        </div>
-        <!--end row-->
-        <!--begin row-->
-        <div class="row">
-          <!--begin col-sm-4 -->
-          <div class="col-md-4">
-            <!--begin blog-item -->
-            <div class="blog-item">
-              <!--begin popup image -->
-              <div class="popup-wrapper">
-                <div class="popup-gallery">
-                  <a href="http://digest.fundrs.vc/issues/how-to-raise-funds-in-2022-878983">
-                    <img src="https://s3.amazonaws.com/revue/items/images/012/567/277/mail/management-income-exchange-graph-funds.jpg?16376487830" class="width-100" alt="How to raise funds in 2022">
-                    <span class="eye-wrapper2"><i class="bi bi-link-45deg"></i></span>
-                  </a>
-                </div>
-              </div>
-              <!--end popup image -->
-              <!--begin blog-item_inner -->
-              <div class="blog-item-inner">
-                <h3 class="blog-title"><a href="http://digest.fundrs.vc/issues/how-to-raise-funds-in-2022-878983">How to raise funds in 2022</a></h3>
-                <a href="http://digest.fundrs.vc/issues/how-to-raise-funds-in-2022-878983" class="blog-icons last">
-                  <i class="bi bi-card-text"></i> Digest &#8212; 9 Min Read
-                </a>
-                <p>From the ideation stage to deploying the actual solution to the market, startup founders like ...</p>               
-              </div>
-              <!--end blog-item-inner -->
-            </div>
-            <!--end blog-item -->
-          </div>
-          <!--end col-sm-4-->
-          <!--begin col-sm-4 -->
-          <div class="col-md-4">
-            <!--begin blog-item -->
-            <div class="blog-item">
-              <!--begin popup image -->
-              <div class="popup-wrapper">
-                <div class="popup-gallery">
-                  <a href="http://digest.fundrs.vc/issues/the-5-pillars-of-successful-startups-847057">
-                    <img src="https://s3.amazonaws.com/revue/items/images/012/389/633/mail/architect-man-looking-design-professional-office.jpg?1636967933" class="width-100" alt="The 5 Pillars of Successful Startups">
-                    <span class="eye-wrapper2"><i class="bi bi-link-45deg"></i></span>
-                  </a>
-                </div>
-              </div>
-              <!--end popup image -->
-              <!--begin blog-item_inner -->
-              <div class="blog-item-inner">
-                <h3 class="blog-title"><a href="http://digest.fundrs.vc/issues/the-5-pillars-of-successful-startups-847057">5 Pillars of Successful Startups</a></h3>
-                <a href="http://digest.fundrs.vc/issues/the-5-pillars-of-successful-startups-847057" class="blog-icons last"><i class="bi bi-card-text"></i> Digest &#8212; 7 Min Read
-                </a>
-                <p>Successful startup founders have their distinct experiences with scaling and building their ...</p>
-              </div>
-              <!--end blog-item-inner -->
-            </div>
-            <!--end blog-item -->
-          </div>
-          <!--end col-sm-4-->
-          <!--begin col-sm-4 -->
-          <div class="col-md-4">
-            <!--begin blog-item -->
-            <div class="blog-item">
-              <!--begin popup image -->
-              <div class="popup-wrapper">
-                <div class="popup-gallery">
-                  <a href="http://digest.fundrs.vc/issues/the-6-ingredients-of-successful-elevator-pitch-843789">
-                    <img src="https://s3.amazonaws.com/revue/items/images/012/212/299/mail/smiling-businessman-elevator.jpg?1636279929" class="width-100" alt="The 6 ingredients of successful elevator pitch">
-                    <span class="eye-wrapper2"><i class="bi bi-link-45deg"></i></span>
-                  </a>
-                </div>
-              </div>
-              <!--end popup image -->
-              <!--begin blog-item_inner -->
-              <div class="blog-item-inner">
-                <h3 class="blog-title"><a href="http://digest.fundrs.vc/issues/the-6-ingredients-of-successful-elevator-pitch-843789">6 ingredients of elevator pitch</a></h3>
-                <a href="http://digest.fundrs.vc/issues/the-6-ingredients-of-successful-elevator-pitch-843789" class="blog-icons last"><i class="bi bi-card-text"></i> Product Launch &#8212; 19 Min Listen</a>
-                
-                <p>The ability to strike a conversation and get your audience interested in what you are saying does ...</p>
-                 
-              </div>
-              <!--end blog-item-inner -->
-              
-            </div>
-            <!--end blog-item -->
-                
-          </div>
-          <!--end col-sm-4-->
-       
-        </div>
-        <!--end row-->
-
-      </div>
-      <!--end container-->
-
-    </section>
-    <!--end blog -->
-
-    
-    <!--begin footer -->
-    <div class="footer">
-          
-      <!--begin container -->
-      <div class="container">
-    
-        <!--begin row -->
-        <div class="row">
-      
-          <!--begin col-md-7 -->
-          <div class="col-md-7">
-           
-            <p><small>Copyrights © 2021 <span class="template-name">FundrsVC</span>. All rights reserved.</small></p>
-            
-          </div>
-          <!--end col-md-7 -->
-          
-          <!--begin col-md-5 -->
-          <div class="col-md-5">
-                                 
-            <!--begin footer_social -->
-            <ul class="footer_social">
-              <li><small>Follw us:</small></li>
-              <li><a href="https://twitter.com/fundrsvc" class="twitter"><i class="bi bi-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/fundrsvc/" class="linkedin"><i class="bi bi-linkedin"></i></a></li>
-            </ul>
-            <!--end footer_social -->
-            
-          </div>
-          <!--end col-md-5 -->
-
-        </div>
-        <!--end row -->
-        
-      </div>
-      <!--end container -->
-              
-    </div>
-    <!--end footer -->
-
   </main>
 
-  <!-- Load JS here for greater good =============================-->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery.scrollTo-min.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/custom.js"></script>
 
+  <!-- Footer -->
+  <footer class="footer pt-5 pb-4 pb-lg-5">
+    <div class="container pt-lg-4">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+            Copyright &copy; 2023&nbsp;<a href="https://fundrs.vc" class="copylinks"><b>FundrsVC Corp.</b></a> All
+            rights reserved.
+          </p>
+        </div>
+        <div class="col-lg-6 text-dark">
+          <p class="nav d-block fs-xs text-center text-md-end pb-2 pb-lg-0 mb-0">
+            <a href="https://www.linkedin.com/in/fundrsvc" target="_blank"
+              class="copylinks">
+              <i class="bx bxl-linkedin"></i>
+            </a> . <a href="https://twitter.com/fundrsvc" target="_blank" class="copylinks">
+            <i class="bx bxl-twitter"></i>
+          </a> .
+          <a href="https://instagram.com/fundrsvc" target="_blank"
+            class="copylinks">
+            <i class="bx bxl-instagram"></i>
+          </a> . 
+            <a href="mailto:support@fundrs.vc" class="copylinks">support@fundrs.vc</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+  </a>
+
+  <!-- Vendor Scripts -->
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="../assets/vendor/parallax-js/dist/parallax.min.js"></script>
+  <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+  <script src="../assets/vendor/rellax/rellax.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+  <script src="../assets/vendor/lightgallery/lightgallery.min.js"></script>
+  <script src="../assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+  <!-- Main Theme Script -->
+  <script src="../assets/js/public.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
 </body>
+
 </html>
