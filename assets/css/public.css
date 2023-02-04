@@ -6,7 +6,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 .text-gradient-primary {
-  background: linear-gradient(to right, #ff1f30, #8B5CF6, #D946EF);
+  background: linear-gradient(to right, #E31B2C, #FF1F30, #FC1E31);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -8139,7 +8139,7 @@ textarea.form-control-lg {
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(90deg, #ff1f30 0%, #8b5cf6 50%, #d946ef 100%) !important;
+  background: linear-gradient(90deg, #ff1f30 0%, #f9035e 50%, #ff1b6b 100%) !important;
 }
 
 .bg-gradient-primary-translucent {

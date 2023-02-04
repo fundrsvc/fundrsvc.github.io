@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FundrsVC Corp.">
+  <meta name="keywords"
+    content="fundrsvc, fundrs, investors relations, investors pipeline, investor update, metrics tracking">
+  <meta name="description"
+    content="Update your investors, Track your metrics, Manage your fundraising pipeline with ease">
+  <title>Investors Deal Flow | FundrsVC</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/ico/favicon-16x16.png">
+  <link rel="manifest" href="../assets/ico/site.webmanifest">
+  <link rel="mask-icon" href="../assets/ico/safari-pinned-tab.svg" color="#FF1F30">
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+  <meta name="msapplication-TileColor" content="#FF1F30">
+  <meta name="msapplication-config" content="../assets/ico/browserconfig.xml">
+  <meta name="theme-color" content="#FF1F30">
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css" />
+  <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css" />
+
+  <!-- Main Theme Styles + Bootstrap -->
+  <link rel="stylesheet" media="screen" href="../assets/css/public.css">
+  <link rel="stylesheet" media="screen" href="../assets/css/custom.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fundrs.vc/">
+  <meta property="og:title" content="Startup Fundraising Platform | FundrsVC">
+  <meta property="og:description"
+    content="Update your investors, Track your metrics, and easily manage your fundraising pipeline.">
+  <meta property="og:image" content="https://fundrs.vc/assets/img/meta-tags.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://fundrs.vc/">
+  <meta property="twitter:title" content="Startup Fundraising Platform | FundrsVC">
+  <meta property="twitter:description"
+    content="Update your investors, Track your metrics, and easily manage your fundraising pipeline.">
+  <meta property="twitter:image" content="https://fundrs.vc/assets/img/meta-tags.png">
+
+  <!-- Theme mode -->
+  <script>
+    let mode = window.localStorage.getItem('mode'),
+      root = document.getElementsByTagName('html')[0];
+    if (mode !== null && mode === 'dark') {
+      root.classList.add('dark-mode');
+    } else {
+      root.classList.remove('dark-mode');
+    }
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXNQHWZ0KF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NXNQHWZ0KF');
+  </script>
+</head>
+
+<body>
+  <!-- Page wrapper for sticky footer -->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="page-wrapper">
+
+
+    <!-- Navbar -->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+    <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <div class="container px-3">
+        <a href="../index.html" class="navbar-brand pe-3">
+          <img src="../assets/img/logo.svg" width="150" alt="FundrsVC Corp." id="header-logo">
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a href="JavaScript:Void(0);" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                  aria-current="page">Product</a>
+                <div class="dropdown-menu p-0">
+                  <div class="d-lg-flex">
+                    <div
+                      class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0"
+                      style="background-image: url(../assets/img/nav-menu.png); margin: -1px;"></div>
+                    <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                      <h6 class="px-3 mb-2">For Startups</h6>
+                      <ul class="list-unstyled mb-3">
+                        <li><a href="../investor-updates.html" class="dropdown-item ">Update Investors</a></li>
+                        <li><a href="../track-metrics.html" class="dropdown-item">Track Metrics</a></li>
+                        <li><a href="../fundraising-pipeline.html" class="dropdown-item">Fundrsising Pipeline</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                      <h6 class="px-3 mb-2">For Investors</h6>
+                      <ul class="list-unstyled mb-3">
+                        <li><a href="../deal-flow.html" class="dropdown-item d-flex align-items-center active">Deal
+                            Flow</a>
+                        </li>
+                        <li><a href="../portfolio-management.html" class="dropdown-item">Portfolio Management</a></li>
+                        <li><a class="dropdown-item text-muted">Due Diligence<span
+                              class="badge bg-info ms-2">Soon</span></a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Company</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../about-us.html" class="dropdown-item">About Us</a></li>
+                  <li><a href="https://www.linkedin.com/company/fundrsvc/jobs/" class="dropdown-item" target="_blank"
+                      rel="noopener">Careers<span class="badge bg-success ms-2">We're hiring</span></a></li>
+                  <li><a href="https://fundrsvc.medium.com" class="dropdown-item" target="_blank"
+                      rel="noopener">Newsroom <i class="bx bx-link-external small"></i></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="https://app.fundrs.vc/investors-database" class="nav-link">Find Investors</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pricing.html" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learn</a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://fundrsvc.gitbook.io/" class="dropdown-item" target="_blank"
+                      rel="noopener">Resources <i class="bx bx-link-external small"></i></a></li>
+                  <li><a href="https://fundrsvc.medium.com" class="dropdown-item" target="_blank"
+                      rel="noopener">Articles <i class="bx bx-link-external small"></i></a></li>
+                  <li><a class="dropdown-item text-muted">Updated Templates<span
+                        class="badge bg-info ms-2">Soon</span></a></li>
+
+                  <li><a class="dropdown-item text-muted">Webinars & Events<span
+                        class="badge bg-info ms-2">Soon</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="offcanvas-header border-top d-lg-none d-flex flex-column">
+            <a href="https://app.fundrs.vc/signin" class="btn btn-outline-primary w-100 mb-2">
+              <i class="bx bx-log-in fs-base me-2"></i> Sign in
+            </a>
+            <a href="https://form.typeform.com/to/V1MAygg4" class="btn btn-primary w-100 shadow-primary" target="_blank"
+              rel="noopener">
+              Get early access
+            </a>
+          </div>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="https://app.fundrs.vc/signin" class="btn btn-link btn-sm fs-sm rounded d-none d-lg-inline-flex me-3">
+          <i class="bx bx-log-in fs-base me-2"></i> Sign in
+        </a>
+        <a href="https://form.typeform.com/to/V1MAygg4"
+          class="btn btn-primary btn-sm shadow-primary fs-sm rounded d-none d-lg-inline-flex" target="_blank"
+          rel="noopener">
+          Get early access
+        </a>
+      </div>
+    </header>
+
+
+    <!-- Page content -->
+    <section class="d-flex align-items-center min-vh-100 py-5 bg-light">
+      <div class="container my-5 text-md-start text-center">
+        <div class="row align-items-center">
+
+          <!-- Animation -->
+          <div class="col-xl-6 col-md-7 order-md-2 ms-n5">
+            <lottie-player src="../assets/json/animation-404.json" background="transparent" speed="1" loop
+              autoplay></lottie-player>
+          </div>
+
+          <!-- Text -->
+          <div class="col-md-5 offset-xl-1 order-md-1">
+            <h1 class="display-1 mb-sm-4 mt-n4 mt-sm-n5">Ooops!</h1>
+            <p class="mb-md-5 mb-4 mx-md-0 mx-auto pb-2 lead">Sorry, it looks like you caught us red-handed. We're
+              updating this page now and will be back online soon.</p>
+            <a href="../index.html" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
+              <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
+              Go to homepage
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Subscription CTA -->
+    <section class="container">
+      <div class="bg-secondary rounded-3 py-5 px-3 px-sm-4 px-lg-5 px-xl-0">
+        <div class="row align-items-center py-lg-4">
+          <div class="col-xl-5 col-md-6 offset-xl-1 mb-4 mb-md-0">
+            <div class="d-flex align-items-center">
+              <img src="../assets/img/notification-icon.svg" width="78" alt="Bell icon">
+              <div class="ps-3 ms-sm-3">
+                <h2 class="h4 mb-0">Subscribe to our newsletter to stay informed about latest updates</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-6">
+            <div class="ps-lg-5 ms-xl-2" id="mc_embed_signup">
+              <form
+                action="https://fundrs.us20.list-manage.com/subscribe/post?u=e7ddf393cb498918517e421e7&amp;id=a7a3c1a7e1&amp;f_id=002071eaf0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                class="input-group input-group-lg needs-validation validate" target="_blank" novalidate>
+                <input type="email" class="form-control rounded-start ps-5" placeholder="Your email" id="mce-EMAIL"
+                  required>
+                <i
+                  class="bx bx-envelope fs-xl text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.
+                </div>
+                <div hidden="true"><input type="hidden" name="tags" value="3463487"></div>
+                <input type="submit" class="btn btn-primary px-sm-4" value="Subscribe" name="subscribe"
+                  id="mc-embedded-subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer pt-5 pb-4 pb-lg-5">
+    <div class="container pt-lg-4">
+      <div class="row pb-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+            <img src="../assets/img/logo.svg" width="140" alt="FundrsVC" id="footer-logo">
+          </div>
+          <p class="fs-sm pb-lg-3 mb-2">FundrsVC offers a comprehensive and user-friendly platform that helps startup
+            founders and early-stage investors navigate the fundraising process.</p>
+          <div class="d-flex justify-content-left">
+            <a href="https://www.linkedin.com/in/fundrsvc" target="_blank"
+              class="btn btn-icon btn-secondary btn-linkedin mx-2 ms-0">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/fundrsvc" target="_blank" class="btn btn-icon btn-secondary btn-twitter mx-2">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="https://instagram.com/fundrsvc" target="_blank"
+              class="btn btn-icon btn-secondary btn-instagram mx-2">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@fundrsvc" target="_blank"
+              class="btn btn-icon btn-secondary btn-youtube mx-2">
+              <i class="bx bxl-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+          <div id="footer-links" class="row">
+            <div class="col-lg-4">
+              <h6 class="mb-2">
+                <a href="#company-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                  data-bs-toggle="collapse">Company</a>
+                <a class="d-block text-dark d-md-none d-lg-block py-2">Company</a>
+              </h6>
+              <div id="company-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                  <li class="nav-item"><a href="../about-us.html"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                  <li class="nav-item"><a href="https://www.linkedin.com/company/fundrsvc/jobs/"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2" rel="noopener" target="_blank">Careers<span
+                        class="badge bg-success ms-2">We're hiring</span></a></li>
+                  <li class="nav-item"><a href="../contact-us.html"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2">Contact</a></li>
+                  <li class="nav-item"><a href="https://fundrsvc.medium.com"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2" target="_blank" rel="noopener">Newsroom <i
+                        class="bx bx-link-external small"></i></a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-3">
+              <h6 class="mb-2">
+                <a href="#resources-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                  data-bs-toggle="collapse">Learn</a>
+                <a class="d-block text-dark d-md-none d-lg-block py-2">Learn</a>
+              </h6>
+              <div id="resources-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                <ul class="nav flex-column mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="https://fundrsvc.medium.com"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2" target="_blank" rel="noopener">Articles <i
+                        class="bx bx-link-external small"></i></a></li>
+                  <li class="nav-item"><a href="https://fundrsvc.gitbook.io/"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2" target="_blank" rel="noopener">Knowledgebase <i
+                        class="bx bx-link-external small"></i></a></li>
+                  <li class="nav-item"><a
+                      href="https://join.slack.com/t/fundrsvc/shared_invite/zt-1j2zvgkcn-rABFTffl_cNY1sGERkjnSg"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2" target="_blank" rel="noopener">Community <i
+                        class="bx bx-link-external small"></i></a></li>
+                  <li class="nav-item"><a class="nav-link d-inline-block px-0 pt-1 pb-2 text-muted">Update
+                      Templates<span class="badge bg-info ms-2">soon</span></a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 pt-lg-0">
+              <h6 class="mb-2">
+                <a href="#extras-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                  data-bs-toggle="collapse">Product</a>
+                <a class="d-block text-dark d-md-none d-lg-block py-2">Product</a>
+              </h6>
+              <div id="extras-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                <ul class="nav flex-column mb-2 mb-lg-0">
+                  <li class="nav-item"><a href="../investor-updates.html"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2">For
+                      Startups</a></li>
+                  <li class="nav-item"><a href="../deal-flow.html" class="nav-link d-inline-block px-0 pt-1 pb-2">For
+                      Investors</a></li>
+                  <li class="nav-item"><a href="https://app.fundrs.vc/investors-database"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2">Investors
+                      Database</a>
+                  </li>
+                  <li class="nav-item"><a href="../pricing.html"
+                      class="nav-link d-inline-block px-0 pt-1 pb-2">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container pb-4">
+          <hr>
+        </div>
+        <div class="col-lg-6">
+          <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+            Copyright &copy; 2023&nbsp;<a href="https://fundrs.vc" class="copylinks"><b>FundrsVC Corp.</b></a> All
+            rights reserved.
+          </p>
+        </div>
+        <div class="col-lg-6 text-dark">
+          <p class="nav d-block fs-xs text-center text-md-end pb-2 pb-lg-0 mb-0">
+            <a class="copylinks text-muted">Sitemap</a> . <a href="../privacy-policy.html" class="copylinks">Privacy
+              Policy</a> . <a href="../terms-of-service.html" class="copylinks">Terms of
+              Service</a> . <a href="mailto:hello@fundrs.vc" class="copylinks">hello@fundrs.vc</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Vendor Scripts -->
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="../assets/vendor/parallax-js/dist/parallax.min.js"></script>
+  <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+  <script src="../assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+  <script src="../assets/vendor/rellax/rellax.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/lightgallery/lightgallery.min.js"></script>
+  <script src="../assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+  <!-- Main Theme Script -->
+  <script src="../assets/js/public.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
+</body>
+
+</html>

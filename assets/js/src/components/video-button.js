@@ -21,7 +21,7 @@ const videoButton = (() => {
         vimeoPlayerParams: {
           byline: 0,
           portrait: 0,
-          color: '6366f1'
+          color: 'E31B2C'
         }
       });
     }

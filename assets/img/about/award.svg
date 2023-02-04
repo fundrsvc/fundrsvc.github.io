@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:v="https://vecta.io/nano"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+	 style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000090992174579353689250000004721174763469554819_);}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.852" y1="26" x2="47.15" y2="26" gradientTransform="matrix(1 0 0 -1 0 50)">
+		<stop  offset="0" style="stop-color:#FF1F30"/>
+		<stop  offset="1" style="stop-color:#FC3931"/>
+	</linearGradient>
+	<path class="st0" d="M45.3,7.5h-5.9V3.8h1c1,0,1.9-0.8,1.9-1.9S41.4,0,40.3,0H7.7c-1,0-1.9,0.8-1.9,1.9s0.8,1.9,1.9,1.9h1v3.8H2.7
+		c-1,0-1.9,0.8-1.9,1.9v3.3c0,4.5,2.6,8.7,6.7,10.6L8.8,24c0.8,5.5,4.5,10.1,9.5,12.1l-2.3,8.2H9.1c-1,0-1.9,0.8-1.9,1.9
+		S8.1,48,9.1,48h29.8c1,0,1.9-0.8,1.9-1.9s-0.8-1.9-1.9-1.9h-6.8l-2.8-9.9C29,33.3,28,32.8,27,33c-1,0.3-2,0.4-3,0.4
+		c-6.4,0-11.6-5.2-11.6-11.6v-18h23.3v18c0,2.3-0.7,4.6-2,6.5c-0.6,0.9-0.4,2,0.5,2.6s2,0.4,2.6-0.5c1.3-1.9,2.1-4.1,2.5-6.4
+		l1.2-0.6c4.1-2,6.7-6.1,6.7-10.6V9.4C47.2,8.4,46.3,7.5,45.3,7.5L45.3,7.5z M21.9,37c0.7,0.1,1.4,0.1,2.1,0.1c0.7,0,1.4,0,2.1-0.1
+		l2,7.2h-8.3L21.9,37L21.9,37z M4.6,12.7v-1.5h4v8.4C6.2,18.3,4.6,15.6,4.6,12.7z M43.4,12.7c0,2.9-1.6,5.5-4,7v-8.4h4
+		C43.4,11.3,43.4,12.7,43.4,12.7z"/>
+	
+		<linearGradient id="SVGID_00000009562589153359618820000001857356528037350839_" gradientUnits="userSpaceOnUse" x1="0.852" y1="32.204" x2="47.152" y2="32.204" gradientTransform="matrix(1 0 0 -1 0 50)">
+		<stop  offset="0" style="stop-color:#FF1F30"/>
+		<stop  offset="1" style="stop-color:#FC3931"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_00000009562589153359618820000001857356528037350839_);" d="M27.6,13.7c0-1-0.8-1.9-1.9-1.9h-3.5
+		c-1,0-1.9,0.8-1.9,1.9c0,1,0.8,1.8,1.8,1.9V20c-1,0.1-1.8,0.9-1.8,1.9c0,1,0.8,1.9,1.9,1.9h3.5c1,0,1.9-0.8,1.9-1.9
+		c0-1-0.8-1.8-1.8-1.9v-4.4C26.9,15.5,27.6,14.7,27.6,13.7z"/>
+</g>
+</svg>
